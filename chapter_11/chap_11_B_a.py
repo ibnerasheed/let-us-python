@@ -1,3 +1,5 @@
+
+
 def word_frequency(string: str) -> dict:
     frequency = {}
 
@@ -8,6 +10,3 @@ def word_frequency(string: str) -> dict:
         else:
             frequency[word] = 1
     return frequency
-
-
-print(word_frequency("adil rasheed"))
