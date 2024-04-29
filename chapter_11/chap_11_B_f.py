@@ -9,9 +9,17 @@ users = {
 user_name = input('Enter username: ')
 password_user = input('Enter passowrd: ')
 
-for user, password in users.items():
-    if user == user_name and password == password_user:
-        print("Correct credentials!")
+if user_name in users and users[user_name] == password_user:
+    print("Correct credentials!")
+else:
+    print("Chor ho tum mukesh!!")
 
 
-print("Chor ho tum mukesh!! ")
+# second method
+# user_name = input('Enter username: ')
+# password_user = input('Enter passowrd: ')
+
+# if users.get(user_name) == password_user:
+#     print("Correct credentials!")
+# else:
+#     print("Chor ho tum mukesh!!")
